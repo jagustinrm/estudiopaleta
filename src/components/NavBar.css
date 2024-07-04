@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position: fixed;
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+li {
+    list-style: none;
+    transition: background-color 500ms, color 500ms;
+    width: 100px;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: beige;
+    color: black;
+
+    opacity: 0.9;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h1 {
+
+    color: rgba(247, 224, 161, 0.795);
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.carrito {
+    position: relative;
+    top: 5px;
+}

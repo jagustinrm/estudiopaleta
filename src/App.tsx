@@ -1,11 +1,18 @@
 // @ts-expect-error paraquefuncione
 import Products from './components/Products.jsx'
-import products from './mocks/products.json'
+// @ts-expect-error paraquefuncione
+import NavBar from './components/NavBar.jsx'
+import { useState } from 'react'
+import {products as initialProducts} from './mocks/products.json'
 import './App.css'
+
+
 function App() {
+  const [products] = useState(initialProducts)
+
   return (
     <>
-      <h1> Estudio Paleta </h1>
+      <NavBar/>
       <Products products = {products} />
     </>
   )

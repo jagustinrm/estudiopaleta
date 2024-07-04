@@ -3,24 +3,29 @@ import React from 'react';
 import './Products.css'
 
 export default function Products({products}) {
+
     return (
         <>
+        <section class="productos">
         <h2> Productos </h2>
-        <div class="contenedor">
+        <div className="contenedor">
 
-           {products.products?.map(prod => 
+           {products?.map(prod => 
             {
                 return (
                     
-                    <div key={prod.id}>
-                    <h3>{prod.type}</h3>
+                <div key={prod.id}>
+                    
                     <img src={prod.img}  />
                     {/* <p>Precio: {prod.price}</p> */}
+                    <h4>Tipo: {prod.type}</h4>
                 </div>
                 )
             }
            )}
+          
            </div>
+           </section>
         </>
     );
 }
