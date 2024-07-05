@@ -12,13 +12,14 @@ export default function Products({products}) {
 
            {products?.map(prod => 
             {
-                return (
-                    
-                <div key={prod.id}>
-                    
-                    <img src={prod.img}  />
+                return (    
+                <div key={prod.id} class="card">
+                    <img src={prod.img} alt={prod.description}  />
                     {/* <p>Precio: {prod.price}</p> */}
-                    <h4>Tipo: {prod.type}</h4>
+                    <div class="tipoProd">
+                    <label > Tipo: </label>
+                    <h4 class="tipoDeProducto"> {prod.type}</h4>
+                    </div>
                 </div>
                 )
             }
