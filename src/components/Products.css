@@ -1,24 +1,30 @@
-img {
-    width: 200px;
-    height: 200px;
+.imgProducts {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 13/9;
     transition: scale 300ms ease;
-    /* border: 2px solid rgba(247, 224, 161, 0.253); */
-    
-    border-radius: 10%;
+    border-radius: 4px;
+    display: block;
 }
 
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
 }
 
 .productos {
-    margin-top: 100px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+
 }
 
-img:hover{
-    scale: 1.1;
+.imgProducts:hover{
+    scale: 1.05;
     /* transition-duration: 10ms; */
     cursor: pointer;
     box-shadow: 0 0px 8px rgba(247, 224, 161, 0.795);
@@ -36,20 +42,38 @@ img:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
-    background-color: rgb(75, 75, 75);
     /* opacity: 0.9; */
     border-radius: 20px;
-    
-    border: 1px solid rgba(247, 224, 161, 0.795);
+    /* border: 1px solid rgba(247, 224, 161, 0.795); */
     height: 30px;
     width: 150px;
-    font-size: 14px;
 }
 
 .tipoDeProducto {
-   color:  rgba(247, 224, 161, 0.795);
-   font-size: 16px;
+   color:  rgba(255, 255, 255, 0.795);
+align-self: center;
+   font-size: 12px;
+   margin-top: 12px;
+}
 
+.corazon {
+    align-self:center;
+
+}
+.corazon:hover {
+    scale: 1.1;
+    color:rgba(247, 224, 161, 0.795);
+}
+h2 {
+    color:  rgba(247, 224, 161, 0.795);
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    color:  rgba(247, 224, 161, 0.795);
+    font-size: 13px;
+    margin-top: 0;
 }

@@ -3,122 +3,163 @@
       {
         "id": 1,
         "img": "/img/ceniceros.jpg",
-        "type": "cenicero",
-        "description": "Cenicero de diseño único."
+        "type": "Cenicero",
+        "description": "Cenicero de diseño único.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 2,
         "img": "/img/cenicero.jpg",
-        "type": "cenicero",
-        "description": "Cenicero de diseño único."
+        "type": "Cenicero",
+        "description": "Cenicero de diseño único.",
+        "like": false,
+        "price": 1
+        
       },
       {
         "id": 3,
         "img": "/img/macetas.jpg",
-        "type": "maceta",
-        "description": "Maceta decorativa para plantas."
+        "type": "Maceta",
+        "description": "Maceta decorativa para plantas.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 4,
         "img": "/img/aliens.jpg",
-        "type": "cenicero",
-        "description": "Cenicero de diseño único."
+        "type": "Cenicero",
+        "description": "Cenicero de diseño único.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 5,
         "img": "/img/ceni.jpg",
-        "type": "cenicero",
-        "description": "Cenicero de diseño único."
+        "type": "Cenicero",
+        "description": "Cenicero de diseño único.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 6,
         "img": "/img/hornito.jpg",
-        "type": "horno",
-        "description": "Horno cerámico artesanal."
+        "type": "Horno",
+        "description": "Horno cerámico artesanal.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 7,
         "img": "/img/lluviayceramica.jpg",
-        "type": "otros",
-        "description": "Piezas decorativas diversas."
+        "type": "Otros",
+        "description": "Piezas decorativas diversas.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 8,
         "img": "/img/mace.jpg",
-        "type": "maceta",
-        "description": "Maceta decorativa para plantas."
+        "type": "Maceta",
+        "description": "Maceta decorativa para plantas.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 9,
         "img": "/img/otrodos.jpg",
-        "type": "otros",
-        "description": "Piezas decorativas diversas."
+        "type": "Otros",
+        "description": "Piezas decorativas diversas.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 10,
         "img": "/img/otros.jpg",
-        "type": "otros",
-        "description": "Piezas decorativas diversas."
+        "type": "Otros",
+        "description": "Piezas decorativas diversas.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 11,
         "img": "/img/pieza.jpg",
-        "type": "otros",
-        "description": "Piezas decorativas diversas."
+        "type": "Otros",
+        "description": "Piezas decorativas diversas.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 12,
         "img": "/img/sahumador.jpg",
-        "type": "sahumador",
-        "description": "Sahumador de cerámica aromática."
+        "type": "Sahumador",
+        "description": "Sahumador de cerámica aromática.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 13,
         "img": "",
         "type": "taza",
-        "description": "Taza de cerámica elegante."
+        "description": "Taza de cerámica elegante.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 14,
         "img": "",
         "type": "plato",
-        "description": "Plato artesanal de cerámica."
+        "description": "Plato artesanal de cerámica.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 15,
         "img": "",
         "type": "cuenco",
-        "description": "Cuenco decorativo de cerámica."
+        "description": "Cuenco decorativo de cerámica.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 16,
         "img": "",
         "type": "jarrón",
-        "description": "Jarrón de cerámica para flores."
+        "description": "Jarrón de cerámica para flores.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 17,
         "img": "",
         "type": "taza",
-        "description": "Taza de cerámica elegante."
+        "description": "Taza de cerámica elegante.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 18,
         "img": "",
         "type": "plato",
-        "description": "Plato artesanal de cerámica."
+        "description": "Plato artesanal de cerámica.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 19,
         "img": "",
         "type": "cuenco",
-        "description": "Cuenco decorativo de cerámica."
+        "description": "Cuenco decorativo de cerámica.",
+        "like": false,
+        "price": 1
       },
       {
         "id": 20,
         "img": "",
         "type": "jarrón",
-        "description": "Jarrón de cerámica para flores."
+        "description": "Jarrón de cerámica para flores.",
+        "like": false,
+        "price": 1
       }
     ]
   }
