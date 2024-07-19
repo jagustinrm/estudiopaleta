@@ -8,20 +8,31 @@ import './App.css'
 
 
 function App() {
-  const [productos, setProductos] = useState(initialProducts)
-  const [filter, setFilters] = useState({
+  const [productos] = useState<Product[]>(initialProducts)
+  const [filter] = useState({
     category: 'all',
     minPrice: 0
   })
 
-  const filterProducts = (products) => {
+  interface Product {
+    id: number;
+    img: string;
+    price: number;
+    type: string;
+    like: boolean;
+    description: string;
+  }
+
+
+  const filterProducts = (products: Product[]): Product[] => {
 
     return products.filter(product => {
       return(
         product.price >= filter.minPrice && 
         (
-          filter.category == 'all' ||
-          product.category == filter.category
+          filter.category == 'all' 
+          // ||
+          // product.category == filter.category
         )
       )
     } )
