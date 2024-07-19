@@ -2,17 +2,29 @@
 import Products from './components/Products.jsx'
 // @ts-expect-error paraquefuncione
 import NavBar from './components/NavBar.jsx'
-import { useState } from 'react';
-import {products as initialProducts} from './mocks/products.json'
-import './App.css'
 
+import { useState, useEffect } from 'react';
+import './App.css'
+import { getProducts } from './components/services/getProducts.js';
 
 function App() {
-  const [productos] = useState<Product[]>(initialProducts)
+
+  const [productos, setProductos] = useState<Product[]>([]);
   const [filter] = useState({
     category: 'all',
     minPrice: 0
   })
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const products = await getProducts();
+      setProductos(products);
+    };
+
+    fetchProducts();
+  }, []);
+
+
 
   interface Product {
     id: number;
@@ -25,8 +37,12 @@ function App() {
 
 
   const filterProducts = (products: Product[]): Product[] => {
-
+    if (!Array.isArray(products)) {
+      console.log(products)
+      return [];
+    }
     return products.filter(product => {
+      
       return(
         product.price >= filter.minPrice && 
         (
@@ -42,6 +58,7 @@ function App() {
     <>
       <NavBar/>
       <Products products = {filterProducts(productos)} />
+      
     </>
   )
 }

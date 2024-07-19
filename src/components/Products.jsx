@@ -1,13 +1,18 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Products.css'
-import {IconHeart} from '@tabler/icons-react';
-import {IconHeartFilled}from '@tabler/icons-react';
+import {IconHeart,IconHeartFilled} from '@tabler/icons-react';
+
 
 
 export default function Products({products}) {
-    const [productos, setProductos] = useState(products)
+
+    const [productos, setProductos] = useState([])
     const [page, setPage] = useState([0 , 6])
+
+    useEffect(() => {
+        setProductos(products);
+    }, [products]);
 
     function handlerTogger(id) {
         const updatedProducts = productos.map(producto => {
@@ -57,6 +62,7 @@ export default function Products({products}) {
                               <IconHeart  /> 
                              </div>  
                             }
+
                             </div>
                     </div>
                 )
