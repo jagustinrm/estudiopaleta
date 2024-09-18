@@ -10,7 +10,8 @@ interface Product {
 
   export async function getProducts(): Promise<Product[]> {
     try {
-      const response = await fetch('./mocks/products.json');
+      // const response = await fetch('./mocks/products.json');
+      const response = await fetch('http://localhost:5000/');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -18,6 +19,17 @@ interface Product {
       return data.products;
     } catch (error) {
       console.error('Error fetching products:', error);
-      return [];
+      try {
+        const response = await fetch('./mocks/products.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data.products;
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        return [];
+      }
     }
+    
   }

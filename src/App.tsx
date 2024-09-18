@@ -1,8 +1,12 @@
 // @ts-expect-error paraquefuncione
 import Products from './components/Products.jsx'
 // @ts-expect-error paraquefuncione
+import Footer from './components/Footer.jsx'
+// @ts-expect-error paraquefuncione
 import NavBar from './components/NavBar.jsx'
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// @ts-expect-error paraquefuncione
+import Contact from './components/Contact.jsx'
 import { useState, useEffect } from 'react';
 import './App.css'
 import { getProducts } from './components/services/getProducts.js';
@@ -55,11 +59,14 @@ function App() {
   }
 
   return (
-    <>
-      <NavBar/>
-      <Products products = {filterProducts(productos)} />
-      
-    </>
+    <BrowserRouter>
+      <NavBar /> 
+      <Routes>
+        <Route path="/home" element={<Products products = {filterProducts(productos)} />}/>
+        <Route path="/contact" element={<Contact/>}/>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 

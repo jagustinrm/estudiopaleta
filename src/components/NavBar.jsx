@@ -9,8 +9,8 @@ export default function NavBar() {
         <nav>
         <img src="img/banner2.png"/>
         <ul>
-            <li>Productos </li>
-            <li>Contactame</li>
+            <a href="/home"><li>Productos </li></a>
+            <a href="/contact"><li>Contactame</li></a>
             <li >
                 <span className="carrito">
                     <IconShoppingCart/>

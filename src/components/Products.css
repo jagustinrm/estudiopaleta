@@ -1,3 +1,13 @@
+.productos {
+    margin-top: 90px;
+    display: flex;
+
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+
+}
+
 .imgProducts {
     width: 100%;
     object-fit: cover;
@@ -14,14 +24,7 @@
     gap: 1rem;
 }
 
-.productos {
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    align-items: center;
 
-}
 
 .imgProducts:hover{
     scale: 1.05;

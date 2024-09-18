@@ -1,0 +1,25 @@
+div p {
+    font-size: 15px;
+    color: rgb(255, 255, 255)
+}
+
+footer {
+    display: grid;
+    position:absolute;
+    margin-top: 20px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(247, 224, 161, 0.534);
+    left: 0;
+    justify-items: center;
+}
+
+.row2 {
+    grid-column: span 3;
+    background-color: black;
+    width: 100%;
+}
+.row1 {
+    display: contents; /* Aplica el grid directamente a los hijos (columnas) */
+  }
+  

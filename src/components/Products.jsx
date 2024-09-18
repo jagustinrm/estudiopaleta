@@ -41,10 +41,9 @@ export default function Products({products}) {
 
     return (
         <main className="productos">
-        <h2> ARTE EN CERÁMICA  </h2>
-        <h3> PRODUCTOS </h3>
-        <div className="contenedor">
-
+            <h2> ARTE EN CERÁMICA  </h2>
+            <h3> PRODUCTOS </h3>
+            <div className="contenedor">
            {productos?.slice(page[0], page[1]).map(prod => 
             {
                 return (    
@@ -56,20 +55,19 @@ export default function Products({products}) {
                             {prod.like?
                              <div className="corazon" onClick={() => handlerTogger(prod.id, prod.like)}>  
                                 <IconHeartFilled /> 
-                                </div>    
+                             </div>    
                             :
                              <div className="corazon" onClick={() => handlerTogger(prod.id, prod.like)}> 
-                              <IconHeart  /> 
+                                <IconHeart  /> 
                              </div>  
                             }
-
                             </div>
                     </div>
                 )
             }
            )}
-           </div>
+            </div>
            <button onClick={() => handlePage()}> Next </button>
-           </main>
+        </main>
     );
 }
