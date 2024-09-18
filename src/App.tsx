@@ -62,7 +62,7 @@ function App() {
     <BrowserRouter>
       <NavBar /> 
       <Routes>
-        <Route path="/home" element={<Products products = {filterProducts(productos)} />}/>
+        <Route path="/" element={<Products products = {filterProducts(productos)} />}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer />

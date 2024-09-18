@@ -11,7 +11,7 @@ interface Product {
   export async function getProducts(): Promise<Product[]> {
     try {
       // const response = await fetch('http://localhost:5000/');
-      const response = await fetch('./mocks/products.json');
+      const response = await fetch('http://localhost:5000/');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
