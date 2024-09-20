@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './Products.css'
 import {IconHeart,IconHeartFilled} from '@tabler/icons-react';
-
+import { NavLink } from "react-router-dom";
 
 
 export default function Products({products}) {
@@ -48,7 +48,9 @@ export default function Products({products}) {
             {
                 return (    
                     <div key={prod.id} className="card" >
-                        <img className="imgProducts" src={prod.img} alt={prod.description}  />
+                        <NavLink to={`/product/${prod.id}`}>
+                            <img className="imgProducts" src={prod.img} alt={prod.description}  />
+                        </NavLink>
                         {/* <p>Precio: {prod.price}</p> */}
                             <div className="tipoProd">
                             <h4 className="tipoDeProducto"> {prod.type}</h4>

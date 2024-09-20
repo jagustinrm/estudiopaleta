@@ -7,9 +7,9 @@ export default function NavBar() {
     return (
         <>
         <nav>
-        <img src="img/banner2.png"/>
+        <img className='banner' src="img/banner2.png"/>
         <ul>
-            <a href="/home"><li>Productos </li></a>
+            <a href="/"><li>Productos </li></a>
             <a href="/contact"><li>Contactame</li></a>
             <li >
                 <span className="carrito">
